@@ -1,0 +1,10 @@
+<h2>
+  Liste des Posts :
+  <small>({{ postsList.length }} élements)</small>
+</h2>
+<ul class="list-group">
+  <app-post-list-item
+    *ngFor="let post of postsList"
+    [post]="post"
+  ></app-post-list-item>
+</ul>
